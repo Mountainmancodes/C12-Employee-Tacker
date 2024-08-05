@@ -47,6 +47,8 @@ This project is licensed under the MIT License.
 ## Contributors
 
 - Created by [Mountainmancodes](https://github.com/Mountainmancodes)
-Contributed:
+
+ Contributed:
+
 - [edX Xpert Learning Assistant](https://www.edx.org/)
 - [Lixiviate](https://github.com/Lixiviate)
