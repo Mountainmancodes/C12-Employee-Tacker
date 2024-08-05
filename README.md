@@ -26,6 +26,20 @@ Employee Tracker is a command-line application designed to manage a company's em
 - Delete a department, role, or employee.
 - View the total utilized budget of a department.
 
+## Examples/DEMO
+
+[Demo Video](https://drive.google.com/file/d/1ovVAHHWFK-opULgUyDlTmP1-6wn-BRUa/view)
+
+![Example 1](./images/department,%20employees%20and%20roles.png)
+
+![Example 2](./images/add%20department,%20add%20role,%20add%20employee,%20update%20employee%20role,%20and%20updated%20manager.png)
+
+![Example 3](./images/department%20budgets.png)
+
+![Example 4](./images/removed%20employee,%20role,%20department,%20and%20exit%20menu.png)
+
+![Example 5](./images/updated%20employees,%20roles,%20departments.png)
+
 ## License
 
 This project is licensed under the MIT License.
