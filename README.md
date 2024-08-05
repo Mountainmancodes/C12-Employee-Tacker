@@ -28,7 +28,7 @@ Employee Tracker is a command-line application designed to manage a company's em
 
 ## Examples/DEMO
 
-[Demo Video](https://drive.google.com/file/d/1ovVAHHWFK-opULgUyDlTmP1-6wn-BRUa/view)
+[Demo Video](https://drive.google.com/file/d/1ovVAHHWFK-opULgUyDlTmP1-6wn-BRUa/view) <- CLICK HERE TO SEE DEMO VIDEO
 
 ![Example 1](./images/department,%20employees%20and%20roles.png)
 
