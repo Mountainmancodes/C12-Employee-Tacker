@@ -15,7 +15,7 @@ const {
     deleteEmployee,
     getDepartmentBudget
 } = require('./db/queries');
-
+// Main menu function to display options to the user
 const mainMenu = () => {
     console.log("Displaying main menu options...");
     inquirer.prompt([
@@ -88,7 +88,7 @@ const mainMenu = () => {
         }
     });
 };
-
+// Function to view all employees with formatted table output
 const viewEmployees = async () => {
     const res = await client.query(`
         SELECT 
@@ -108,13 +108,13 @@ const viewEmployees = async () => {
     console.table(res.rows);
     mainMenu();
 };
-
+// Function to view all departments with formatted table output
 const viewDepartments = async () => {
     const res = await getDepartments();
     console.table(res.rows);
     mainMenu();
 };
-
+// Function to view all roles with formatted table output
 const viewRoles = async () => {
     const res = await client.query(`
         SELECT 
@@ -129,7 +129,7 @@ const viewRoles = async () => {
     console.table(res.rows);
     mainMenu();
 };
-
+// Function to prompt the user to add a new department
 const promptAddDepartment = () => {
     inquirer.prompt([
         {
@@ -143,7 +143,7 @@ const promptAddDepartment = () => {
         mainMenu();
     });
 };
-
+// Function to prompt the user to add a new role
 const promptAddRole = async () => {
     const departments = await getDepartments();
     inquirer.prompt([
@@ -172,7 +172,7 @@ const promptAddRole = async () => {
         mainMenu();
     });
 };
-
+// Function to prompt the user to add a new employee
 const promptAddEmployee = async () => {
     const roles = await getRoles();
     const employees = await getEmployees();
@@ -211,7 +211,7 @@ const promptAddEmployee = async () => {
         mainMenu();
     });
 };
-
+// Function to prompt the user to update an employee's role
 const promptUpdateEmployeeRole = async () => {
     const employees = await getEmployees();
     const roles = await getRoles();
@@ -240,7 +240,7 @@ const promptUpdateEmployeeRole = async () => {
         mainMenu();
     });
 };
-
+// Function to prompt the user to update an employee's manager
 const promptUpdateEmployeeManager = async () => {
     const employees = await getEmployees();
     inquirer.prompt([
@@ -268,7 +268,7 @@ const promptUpdateEmployeeManager = async () => {
         mainMenu();
     });
 };
-
+// Function to prompt the user to view employees by their manager
 const promptViewEmployeesByManager = async () => {
     const employees = await getEmployees();
     inquirer.prompt([
@@ -287,7 +287,7 @@ const promptViewEmployeesByManager = async () => {
         mainMenu();
     });
 };
-
+// Function to prompt the user to delete a department
 const promptDeleteDepartment = async () => {
     const departments = await getDepartments();
     inquirer.prompt([
@@ -306,7 +306,7 @@ const promptDeleteDepartment = async () => {
         mainMenu();
     });
 };
-
+// Function to prompt the user to delete a role
 const promptDeleteRole = async () => {
     const roles = await getRoles();
     inquirer.prompt([
@@ -325,7 +325,7 @@ const promptDeleteRole = async () => {
         mainMenu();
     });
 };
-
+// Function to prompt the user to delete an employee
 const promptDeleteEmployee = async () => {
     const employees = await getEmployees();
     inquirer.prompt([
@@ -344,7 +344,7 @@ const promptDeleteEmployee = async () => {
         mainMenu();
     });
 };
-
+// Function to prompt the user to view the total utilized budget of a department
 const promptViewDepartmentBudget = async () => {
     const res = await client.query(`
         SELECT 
