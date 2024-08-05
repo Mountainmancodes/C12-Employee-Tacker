@@ -1,4 +1,3 @@
--- schema.sql
 \c postgres;
 
 DROP DATABASE IF EXISTS department_db;

@@ -3,8 +3,8 @@ const { Client } = require('pg');
 const client = new Client({
     user: 'postgres',
     host: 'localhost',
-    database: 'department_db',   
-    password: 'A1parher@87',  // Replace with your actual PostgreSQL password
+    database: 'department_db',
+    password: 'A1parher@87', // Replace with your actual PostgreSQL password
     port: 5432,
 });
 
@@ -68,6 +68,7 @@ const getDepartmentBudget = (department_id) => {
 };
 
 module.exports = {
+    client, // Export the client
     getDepartments,
     getRoles,
     getEmployees,
