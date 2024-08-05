@@ -3,14 +3,14 @@ INSERT INTO department (name) VALUES
 ('Sales'),
 ('Marketing'),
 ('Finance'),
-('Human Resources')
+('Human Resources'),
 ('Legal');
 
 INSERT INTO role (title, salary, department_id) VALUES
 ('Software Engineer', 90000, 1),
 ('Sales Manager', 80000, 2),
 ('Marketing Director', 125000, 3),
-('Financial Analyst',65000, 4),
+('Financial Analyst', 65000, 4),
 ('Benefits Administrator', 75000, 5),
 ('Personal Injury Lawyer', 185000, 6);
 
@@ -19,9 +19,9 @@ INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES
 ('Julia', 'Warts', 2, NULL),
 ('Cinco', 'Bronco', 6, NULL),
 ('Emma', 'Bronze', 5, NULL),
-('Mikal', 'Cyprus', 6, 7),
+('Mikal', 'Cyprus', 6, 3),
 ('Joshua', 'White', 4, NULL),
-('Sarah', 'Strickland', 3, 9);
+('Sarah', 'Strickland', 3, 2);
 
 SELECT * FROM department;
 SELECT * FROM role;
